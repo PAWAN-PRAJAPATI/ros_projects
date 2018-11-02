@@ -6,3 +6,5 @@
 # testing this directory and lists subdirectories to be tested as well.
 subdirs(gtest)
 subdirs(m2wr_description)
+subdirs(aspha18_urdf)
+subdirs(ROS_Gazebo)

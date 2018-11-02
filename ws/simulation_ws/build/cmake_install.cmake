@@ -118,6 +118,8 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/pawan/Desktop/UD/ROS/ws/simulation_ws/build/gtest/cmake_install.cmake")
   include("/home/pawan/Desktop/UD/ROS/ws/simulation_ws/build/m2wr_description/cmake_install.cmake")
+  include("/home/pawan/Desktop/UD/ROS/ws/simulation_ws/build/aspha18_urdf/cmake_install.cmake")
+  include("/home/pawan/Desktop/UD/ROS/ws/simulation_ws/build/ROS_Gazebo/cmake_install.cmake")
 
 endif()
 

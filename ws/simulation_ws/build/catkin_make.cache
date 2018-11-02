@@ -1,2 +1,2 @@
-m2wr_description
+ROS_Gazebo:aspha18_urdf:m2wr_description
 -DCATKIN_DEVEL_PREFIX=/home/pawan/Desktop/UD/ROS/ws/simulation_ws/devel -DCMAKE_INSTALL_PREFIX=/home/pawan/Desktop/UD/ROS/ws/simulation_ws/install -G Unix Makefiles

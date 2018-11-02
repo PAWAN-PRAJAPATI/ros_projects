@@ -1,0 +1,8 @@
+prefix=/home/pawan/Desktop/UD/ROS/ws/simulation_ws/devel
+
+Name: hector_Astar
+Description: Description of hector_Astar
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/pawan/Desktop/UD/ROS/ws/simulation_ws/devel/lib 
+Requires: 
