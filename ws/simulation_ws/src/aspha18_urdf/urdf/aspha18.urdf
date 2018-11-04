@@ -200,7 +200,7 @@
     <child
       link="wheel2" />
     <axis
-      xyz="1 0 0" />
+      xyz="-1 0 0" />
   </joint>
 
   <link
@@ -312,7 +312,7 @@
     <child
       link="wheel4" />
     <axis
-      xyz="1 0 0" />
+      xyz="-1 0 0" />
   </joint>
   <link
     name="base_rotn">
@@ -368,7 +368,7 @@
       xyz="0 0 1" />
     <limit
       effort="0"
-      velocity="0" />
+      velocity="0.3" />
   </joint>
   <link
     name="shoulder_links">
@@ -542,8 +542,8 @@
     <limit
       lower="-1.2"
       upper="1.9"
-      effort="0"
-      velocity="0" />
+      effort="0.1"
+      velocity="0.1" />
   </joint>
   <link
     name="bio_assembly">
@@ -843,6 +843,26 @@
       </joint>
     </transmission>
 
+
+    <transmission name="gripper_tran" type="SimpleTransmission">
+      <type>transmission_interface/SimpleTransmission</type>
+      <actuator name="gripper_tran_motor">
+        <mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+      <joint name="gripper_joint">
+        <hardwareInterface>PositionJointInterface</hardwareInterface>
+      </joint>
+    </transmission>
+
+       <transmission name="gripper_tran" type="SimpleTransmission">
+      <type>transmission_interface/SimpleTransmission</type>
+      <actuator name="gripper_tran_motor">
+        <mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+      <joint name="base_rotation">
+        <hardwareInterface>PositionJointInterface</hardwareInterface>
+      </joint>
+    </transmission>
 
     <gazebo reference="wheel1">
       <mu1 value="200.0"/>

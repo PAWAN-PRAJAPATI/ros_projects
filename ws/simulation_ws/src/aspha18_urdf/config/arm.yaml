@@ -2,3 +2,7 @@ type: "position_controllers/JointGroupPositionController"
 joints:
  - shoulder_joint
  - elbow_joint
+ - gripper_joint
+ - base_rotation
+
+base_frame_id: base_link

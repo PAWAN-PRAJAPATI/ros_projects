@@ -1,0 +1,9 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/pawan/Desktop/UD/ROS/ws/rover_ws/devel/lib/python2.7/dist-packages",
+        "/home/pawan/Desktop/UD/dep/devel/lib/python2.7/dist-packages",
+        "/home/pawan/catkin_ws2/devel/lib/python2.7/dist-packages",
+        "/home/pawan/catkin_ws/devel/lib/python2.7/dist-packages",
+        "/opt/ros/kinetic/lib/python2.7/dist-packages"
+    ]
+}

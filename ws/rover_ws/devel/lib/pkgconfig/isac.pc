@@ -1,0 +1,8 @@
+prefix=/home/pawan/Desktop/UD/ROS/ws/rover_ws/devel
+
+Name: isac
+Description: Description of isac
+Version: 0.0.0
+Cflags: -I/home/pawan/Desktop/UD/ROS/ws/rover_ws/devel/include
+Libs: -L/home/pawan/Desktop/UD/ROS/ws/rover_ws/devel/lib 
+Requires: message_runtime
