@@ -1,6 +1,11 @@
 <launch>
 
-    <node pkg="isac" type="talker.py" name="pid_publisher" output="log">
+    <node pkg="isac" type="pid_publisher.py" name="pid_publisher" output="log">
     </node>
- 
+     <node pkg="isac" type="serve_ik.py" name="ik_server" output="log">
+    </node>
+    <node pkg="isac" type="apply_ik.py" name="apply_ik" output="log">
+    </node>
+    <node pkg="isac" type="give_arm_commands.py" name="pygame_arm_controls" output="screen">
+    </node>
 </launch>

@@ -32,7 +32,7 @@ def callback(data):
 
 def listener():
 
-    rospy.init_node('pid_publish', anonymous=True)
+    rospy.init_node('pid_publisher')
     rospy.Subscriber("/joint_states",JointState, callback)
 
     # spin() simply keeps python from exiting until this node is stopped

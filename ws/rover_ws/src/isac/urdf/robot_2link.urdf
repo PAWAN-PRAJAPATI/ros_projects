@@ -109,10 +109,8 @@
     <axis
       xyz="1 0 0" />
     <limit
-      lower="-0.45"
-      upper="1.12"
       effort="0"
-      velocity="0.1" />
+      velocity="0.3" />
   </joint>
   <link
     name="elbow_link">
@@ -167,10 +165,8 @@
     <axis
       xyz="1 0 0" />
     <limit
-      lower="-3.14"
-      upper="3.14"
       effort="0"
-      velocity="0.1" />
+      velocity="0.3" />
   </joint>
   <link
     name="gripper">
@@ -226,10 +222,8 @@
     <axis
       xyz="1 0 0" />
     <limit
-      lower="-1.2"
-      upper="1.9"
       effort="0"
-      velocity="0.1" />
+      velocity="0.3" />
   </joint>
 
     <link name="end"></link>
@@ -246,7 +240,11 @@
       link="end" />
     <axis
       xyz="1 0 0" />
+
   </joint>
+
+
+
   
 
   </robot>
