@@ -34,9 +34,17 @@ def get_final_angles(req):
     print(position)
     return (arm_angles_final)
 
+
+def get_final_position(req):
+     real_frame = my_chain.forward_kinematics([0,req.arm_angles.base,req.arm_angles.shoulder,req.arm_angles.elbow,req.arm_angles.gripper,0])
+     print(real_frame)
+     return ArmPosition()
+
 def IK_server():
     rospy.init_node('ik_server')
     s = rospy.Service('ik_srv', IKsrv, get_final_angles)
+    #s1 = rospy.Service('fk_srv', FKsrv, get_final_position)
+
     print "Ready to srve ik."
     rospy.spin()
 

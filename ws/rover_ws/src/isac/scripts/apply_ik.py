@@ -27,7 +27,7 @@ def slove_ik(arm_angles,position):
         return resp1
 
     except rospy.ServiceException, e:
-        print "Service call failed: %s"%e
+        print ("Service call failed: %s"%e)
 
 if __name__ == "__main__":
 

@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "/home/pawan/Desktop/UD/ROS/ws/rover_ws/devel/share/common-lisp/ros/isac/msg/ArmPosition.lisp"
   "/home/pawan/Desktop/UD/ROS/ws/rover_ws/devel/share/common-lisp/ros/isac/msg/ArmAngles.lisp"
   "/home/pawan/Desktop/UD/ROS/ws/rover_ws/devel/share/common-lisp/ros/isac/srv/IKsrv.lisp"
+  "/home/pawan/Desktop/UD/ROS/ws/rover_ws/devel/share/common-lisp/ros/isac/srv/FKsrv.lisp"
 )
 
 # Per-language clean rules from dependency scanning.

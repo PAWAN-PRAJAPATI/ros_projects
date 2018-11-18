@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "/home/pawan/Desktop/UD/ROS/ws/rover_ws/devel/share/gennodejs/ros/isac/msg/ArmPosition.js"
   "/home/pawan/Desktop/UD/ROS/ws/rover_ws/devel/share/gennodejs/ros/isac/msg/ArmAngles.js"
   "/home/pawan/Desktop/UD/ROS/ws/rover_ws/devel/share/gennodejs/ros/isac/srv/IKsrv.js"
+  "/home/pawan/Desktop/UD/ROS/ws/rover_ws/devel/share/gennodejs/ros/isac/srv/FKsrv.js"
 )
 
 # Per-language clean rules from dependency scanning.

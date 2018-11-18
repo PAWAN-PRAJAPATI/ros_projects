@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "/home/pawan/Desktop/UD/ROS/ws/rover_ws/devel/lib/python2.7/dist-packages/isac/msg/_ArmPosition.py"
   "/home/pawan/Desktop/UD/ROS/ws/rover_ws/devel/lib/python2.7/dist-packages/isac/msg/_ArmAngles.py"
   "/home/pawan/Desktop/UD/ROS/ws/rover_ws/devel/lib/python2.7/dist-packages/isac/srv/_IKsrv.py"
+  "/home/pawan/Desktop/UD/ROS/ws/rover_ws/devel/lib/python2.7/dist-packages/isac/srv/_FKsrv.py"
   "/home/pawan/Desktop/UD/ROS/ws/rover_ws/devel/lib/python2.7/dist-packages/isac/msg/__init__.py"
   "/home/pawan/Desktop/UD/ROS/ws/rover_ws/devel/lib/python2.7/dist-packages/isac/srv/__init__.py"
 )

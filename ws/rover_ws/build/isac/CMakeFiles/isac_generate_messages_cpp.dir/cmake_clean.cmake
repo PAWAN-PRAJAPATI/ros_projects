@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "/home/pawan/Desktop/UD/ROS/ws/rover_ws/devel/include/isac/ArmPosition.h"
   "/home/pawan/Desktop/UD/ROS/ws/rover_ws/devel/include/isac/ArmAngles.h"
   "/home/pawan/Desktop/UD/ROS/ws/rover_ws/devel/include/isac/IKsrv.h"
+  "/home/pawan/Desktop/UD/ROS/ws/rover_ws/devel/include/isac/FKsrv.h"
 )
 
 # Per-language clean rules from dependency scanning.

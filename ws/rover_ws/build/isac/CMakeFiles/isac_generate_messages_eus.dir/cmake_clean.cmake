@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "/home/pawan/Desktop/UD/ROS/ws/rover_ws/devel/share/roseus/ros/isac/msg/ArmPosition.l"
   "/home/pawan/Desktop/UD/ROS/ws/rover_ws/devel/share/roseus/ros/isac/msg/ArmAngles.l"
   "/home/pawan/Desktop/UD/ROS/ws/rover_ws/devel/share/roseus/ros/isac/srv/IKsrv.l"
+  "/home/pawan/Desktop/UD/ROS/ws/rover_ws/devel/share/roseus/ros/isac/srv/FKsrv.l"
   "/home/pawan/Desktop/UD/ROS/ws/rover_ws/devel/share/roseus/ros/isac/manifest.l"
 )
 

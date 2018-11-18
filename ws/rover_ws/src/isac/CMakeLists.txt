@@ -61,6 +61,7 @@ add_message_files(
 add_service_files(
    FILES
    IKsrv.srv
+   FKsrv.srv
 
  )
 

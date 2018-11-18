@@ -40,7 +40,10 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/isac/srv" TYPE FILE FILES "/home/pawan/Desktop/UD/ROS/ws/rover_ws/src/isac/srv/IKsrv.srv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/isac/srv" TYPE FILE FILES
+    "/home/pawan/Desktop/UD/ROS/ws/rover_ws/src/isac/srv/IKsrv.srv"
+    "/home/pawan/Desktop/UD/ROS/ws/rover_ws/src/isac/srv/FKsrv.srv"
+    )
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")

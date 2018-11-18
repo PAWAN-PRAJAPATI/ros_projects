@@ -1,7 +1,7 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
 messages_str = "/home/pawan/Desktop/UD/ROS/ws/rover_ws/src/isac/msg/ArmAngles.msg;/home/pawan/Desktop/UD/ROS/ws/rover_ws/src/isac/msg/ArmPosition.msg"
-services_str = "/home/pawan/Desktop/UD/ROS/ws/rover_ws/src/isac/srv/IKsrv.srv"
+services_str = "/home/pawan/Desktop/UD/ROS/ws/rover_ws/src/isac/srv/IKsrv.srv;/home/pawan/Desktop/UD/ROS/ws/rover_ws/src/isac/srv/FKsrv.srv"
 pkg_name = "isac"
 dependencies_str = "std_msgs;geometry_msgs"
 langs = "gencpp;geneus;genlisp;gennodejs;genpy"
