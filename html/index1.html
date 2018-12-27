@@ -3,66 +3,49 @@
 <head>
 <meta charset="utf-8" />
 
-<script type="text/javascript" src="http://static.robotwebtools.org/EventEmitter2/current/eventemitter2.min.js"></script>
-<script type="text/javascript" src="http://static.robotwebtools.org/roslibjs/current/roslib.min.js"></script>
+<script src="https://static.robotwebtools.org/roslibjs/current/roslib.min.js"></script>
+<script src="https://static.robotwebtools.org/EventEmitter2/current/eventemitter2.min.js"></script>
+<script src="https://static.robotwebtools.org/keyboardteleopjs/current/keyboardteleop.min.js"></script>
+<script src="https://yoannmoinet.github.io/nipplejs/javascripts/nipplejs.js"></script>
+
 
 <script type="text/javascript" type="text/javascript">
-  // Connecting to ROS
-  // -----------------
 
-  var ros = new ROSLIB.Ros({
-    url : 'ws://:localhost:9090'
-  });
+	robot_IP = "192.168.43.162";
 
-  ros.on('connection', function() {
-    console.log('Connected to websocket server.');
-  });
+		// // Init handle for rosbridge_websocket
+		ros = new ROSLIB.Ros({
+			url: "ws://" + robot_IP + ":9090"
+	});
 
-  ros.on('error', function(error) {
-    console.log('Error connecting to websocket server: ', error);
-  });
-
-  ros.on('close', function() {
-    console.log('Connection to websocket server closed.');
-  });
-
-  // Publishing a Topic
-  // ------------------
-function moveBot(){
-  var cmdVel = new ROSLIB.Topic({
-    ros : ros,
-    name : 'turtle1/cmd_vel',
-    messageType : 'geometry_msgs/Twist'
-  });
-
-  var twist = new ROSLIB.Message({
-    linear : {
-      x : 1.0,
-      y : 1.0,
-      z : 13
-    },
-    angular : {
-      x : -0.1,
-      y : -0.2,
-      z : -0.3
-    }
-  });
-  cmdVel.publish(twist);
+	function moveBot() {
+		console.log("moveBot")
+	    // Init message with zero values.
+	    twist = new ROSLIB.Message({
+		linear: {
+		    x: 1,
+		    y: 1,
+		    z: 3
+		},
+		angular: {
+		    x: 0,
+		    y: 0,
+		    z: 1.0
+		}
+	    });
+	    // Init topic object
+	    cmdVel = new ROSLIB.Topic({
+		ros: ros,
+		name: '/turtle1/cmd_vel',
+		messageType: 'geometry_msgs/Twist'
+	    });
+	    // Register publisher within ROS system
+	    cmdVel.advertise();
+		cmdVel.publish(twist);
+	}
 
 
-  var test = new ROSLIB.Topic({
-    ros : ros,
-    name : 'chatter',
-    messageType :  'std_msgs/String'
-  });
-
-  var str_msg = new ROSLIB.Message({data:'Hello this is testing'})
-  //test.publish(str_msg)
-
-
-}
-  // Calling a service
-  // -----------------
+ 
 </script>
 </head>
 

@@ -8,9 +8,9 @@ from isac.srv import IKsrv
 from std_msgs.msg import Float64MultiArray
 
 def callback(position,arm_angles):
-    print("position:",position)
-    print("arm_angles:",arm_angles)
-    print("ik sloved:",slove_ik(arm_angles,position))
+    #print("position:",position)
+    #print("arm_angles:",arm_angles)
+    slove_ik(arm_angles,position)
 
 def slove_ik(arm_angles,position):
     rospy.wait_for_service('ik_srv')
