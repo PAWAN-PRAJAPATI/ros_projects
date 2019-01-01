@@ -2,24 +2,21 @@
 
 import rospy
 from drive.msg import DriveCommand
+import serial
 
-def callback(data):
-    print("data")
-    print(data)
-    
-def listener():
 
-    # In ROS, nodes are uniquely named. If two nodes with the same
-    # name are launched, the previous one is kicked off. The
-    # anonymous=True flag means that rospy will choose a unique
-    # name for our 'listener' node so that multiple listeners can
-    # run simultaneously.
-    rospy.init_node('listener')
+#ser = serial.Serial('/dev/ttyACM0',9600)  #Serial
 
-    rospy.Subscriber("drive/command", DriveCommand, callback)
+def ardiuno(data):
+    command = data.command
+    print(command)
+    #ser.write(command)  
 
-    # spin() simply keeps python from exiting until this node is stopped
+def start():
+
+    rospy.init_node('drive_rover')
+    rospy.Subscriber("drive/command", DriveCommand, ardiuno)
     rospy.spin()
 
 if __name__ == '__main__':
-    listener()
+    start()
