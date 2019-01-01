@@ -3,8 +3,10 @@
 import rospy
 from drive.msg import DriveCommand
 import serial
+import sys
 
-
+print(sys.argv)
+ardiuno_port = '/dev/ttyACM'
 #ser = serial.Serial('/dev/ttyACM0',9600)  #Serial
 
 def ardiuno(data):
