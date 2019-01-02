@@ -1,0 +1,6 @@
+set(arm_SETUP_PY_VERSION "0.0.0")
+set(arm_SETUP_PY_SCRIPTS "")
+set(arm_SETUP_PY_PACKAGES "arm")
+set(arm_SETUP_PY_PACKAGE_DIRS "include/arm")
+set(arm_SETUP_PY_MODULES "")
+set(arm_SETUP_PY_MODULE_DIRS "")
