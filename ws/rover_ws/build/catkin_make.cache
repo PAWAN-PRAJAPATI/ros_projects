@@ -1,2 +1,2 @@
-drive:isac
+arm:drive:isac
 -DCATKIN_DEVEL_PREFIX=/home/pawan/Desktop/UD/ROS/ws/rover_ws/devel -DCMAKE_INSTALL_PREFIX=/home/pawan/Desktop/UD/ROS/ws/rover_ws/install -G Unix Makefiles

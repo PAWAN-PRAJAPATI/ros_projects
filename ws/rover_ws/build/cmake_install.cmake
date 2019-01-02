@@ -118,6 +118,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/pawan/Desktop/UD/ROS/ws/rover_ws/build/gtest/cmake_install.cmake")
   include("/home/pawan/Desktop/UD/ROS/ws/rover_ws/build/isac/cmake_install.cmake")
+  include("/home/pawan/Desktop/UD/ROS/ws/rover_ws/build/arm/cmake_install.cmake")
   include("/home/pawan/Desktop/UD/ROS/ws/rover_ws/build/drive/cmake_install.cmake")
 
 endif()

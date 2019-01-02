@@ -1,6 +1,10 @@
 <launch>
+    
     <node pkg="drive" type="on_rover.py" name="drive_rover"  output="log">
     </node>
+
     <node pkg="drive" type="on_gcs.py" name="drive_gcs"  output="log">
     </node>
+    
+    <!-- add machine tag -->
 </launch>

@@ -1,0 +1,8 @@
+prefix=/home/pawan/Desktop/UD/ROS/ws/rover_ws/devel
+
+Name: arm
+Description: Description of arm
+Version: 0.0.0
+Cflags: -I/home/pawan/Desktop/UD/ROS/ws/rover_ws/devel/include
+Libs: -L/home/pawan/Desktop/UD/ROS/ws/rover_ws/devel/lib 
+Requires: rospy std_msgs message_runtime
