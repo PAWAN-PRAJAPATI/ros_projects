@@ -4,17 +4,10 @@ import rospy
 from arm.msg import ArmControls
 import pygame
 import sys
+from arm import utils
 from pygame.locals import *
 
 
-def getResourcepath(resource):
-    file_path = sys.argv[0]
-    file_path = file_path.split("/")
-    file_path[-1]=resource
-    file_path[-2]="res"
-    res_path = '/'.join(file_path)
-    print(res_path)
-    return res_path
 
 def dis():
     d = myfont.render("Motors   :- ", 1, (0,0,0))
@@ -62,7 +55,7 @@ def dis():
 
 
     d = myfont.render("Esc to exit", 1, (0,0,0))
-    screen.blit(d, (750, 5))
+    screen.blit(d, (700, 5))
     
     screen.blit(img, [0, 80])
     
@@ -216,7 +209,8 @@ screen = pygame.display.set_mode(size)
 pygame.display.set_caption("URC ARM Controls")
 myfont = pygame.font.SysFont("Liberation Serif", 20)
 WHITE = (255,255,255)
-img=pygame.image.load(getResourcepath("Arm_controls.png")).convert()
+img=pygame.image.load(utils.getResourcepath("Arm_controls.png",sys.argv[0])).convert()
+#img=pygame.image.load("Arm_controls.png").convert()
 
 step = 20
 ###

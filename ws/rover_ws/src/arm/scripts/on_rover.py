@@ -10,8 +10,6 @@ import Adafruit_PCA9685
 
 
 
-
-
 def base_clk(arm_controls):
     pwm.set_pwm(arm_pins.base_chl, 0, arm_controls.base_pwm)
     GPIO.output(arm_pins.base_dir,GPIO.HIGH)
@@ -141,11 +139,6 @@ def pi(arm_controls):
 
     elif(command== 'k'):
         stop()
-
-
-
-
-
 
 
 
